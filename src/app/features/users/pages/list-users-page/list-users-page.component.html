@@ -1,0 +1,26 @@
+<app-navigation/>
+<p-table [value]="users">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Phone number</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-user>
+    <tr>
+      <td class="flex gap-2">
+        <button pButton>asdfa</button>
+        <button pButton>asdfa</button>
+      </td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.lastName }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.role }}</td>
+      <td>{{ user.phoneNumber }}</td>
+    </tr>
+  </ng-template>
+</p-table>

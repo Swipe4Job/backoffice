@@ -1,0 +1,6 @@
+<p-sidebar [(visible)]="_visible" (visibleChange)="updateVisibility($event)">
+  <ng-template pTemplate="content" class="w-full">
+    <p-menu [model]="items">
+    </p-menu>
+  </ng-template>
+</p-sidebar>

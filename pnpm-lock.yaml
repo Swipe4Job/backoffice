@@ -35,9 +35,24 @@ dependencies:
   '@angular/ssr':
     specifier: ^17.0.9
     version: 17.2.0(@angular/common@17.2.2)(@angular/core@17.2.2)
+  '@zertifier/criteria':
+    specifier: ^1.0.1
+    version: 1.0.1
+  '@zertifier/rx-store':
+    specifier: ^1.0.0
+    version: 1.0.0(rxjs@7.8.1)
   express:
     specifier: ^4.18.2
     version: 4.18.2
+  primeflex:
+    specifier: ^3.3.1
+    version: 3.3.1
+  primeicons:
+    specifier: ^6.0.1
+    version: 6.0.1
+  primeng:
+    specifier: ^17.7.0
+    version: 17.7.0(@angular/common@17.2.2)(@angular/core@17.2.2)(@angular/forms@17.2.2)(rxjs@7.8.1)(zone.js@0.14.4)
   rxjs:
     specifier: ~7.8.0
     version: 7.8.1
@@ -2748,6 +2763,19 @@ packages:
     resolution: {integrity: sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==}
     dev: true
 
+  /@zertifier/criteria@1.0.1:
+    resolution: {integrity: sha512-TynLTR+FMQMT3/vjh38DurGkaCE58TVOtsKJriff6PJigTCFc2XvHyRdPA3KSfkDnRQYxEEiSN++3jAiVSPwEw==}
+    dev: false
+
+  /@zertifier/rx-store@1.0.0(rxjs@7.8.1):
+    resolution: {integrity: sha512-WJWcF+C/SZcBzlCbGqZdybGCb2hmRn/6T7/2X3/NGLNeMLJNXWNmGORhP5DPyr2VlMR1gk57WCVfBnwNG0msUA==}
+    peerDependencies:
+      rxjs: 7.8.1
+    dependencies:
+      lodash: 4.17.21
+      rxjs: 7.8.1
+    dev: false
+
   /abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -4944,7 +4972,6 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
@@ -5762,6 +5789,31 @@ packages:
   /pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
     engines: {node: '>=6'}
+
+  /primeflex@3.3.1:
+    resolution: {integrity: sha512-zaOq3YvcOYytbAmKv3zYc+0VNS9Wg5d37dfxZnveKBFPr7vEIwfV5ydrpiouTft8MVW6qNjfkaQphHSnvgQbpQ==}
+    dev: false
+
+  /primeicons@6.0.1:
+    resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
+    dev: false
+
+  /primeng@17.7.0(@angular/common@17.2.2)(@angular/core@17.2.2)(@angular/forms@17.2.2)(rxjs@7.8.1)(zone.js@0.14.4):
+    resolution: {integrity: sha512-84rSVSMNQFUPrZJ8H3m6GAo0BcboNDXCDRrRaKgSez3kTy0Y8idgyH4QRguhB0bZmzqNfmRyPLmPSeXkmYpMhQ==}
+    peerDependencies:
+      '@angular/common': ^17.0.0
+      '@angular/core': ^17.0.0
+      '@angular/forms': ^17.0.0
+      rxjs: ^6.0.0 || ^7.8.1
+      zone.js: ~0.14.0
+    dependencies:
+      '@angular/common': 17.2.2(@angular/core@17.2.2)(rxjs@7.8.1)
+      '@angular/core': 17.2.2(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/forms': 17.2.2(@angular/common@17.2.2)(@angular/core@17.2.2)(@angular/platform-browser@17.2.2)(rxjs@7.8.1)
+      rxjs: 7.8.1
+      tslib: 2.6.2
+      zone.js: 0.14.4
+    dev: false
 
   /proc-log@3.0.0:
     resolution: {integrity: sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A==}
