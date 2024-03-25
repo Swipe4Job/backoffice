@@ -1,5 +1,10 @@
 <app-navigation/>
-<p-table [value]="users">
+
+<div class="flex mt-2 w-full justify-content-end">
+  <p-button icon="pi pi-plus" label="Add user" (onClick)="addUser()"></p-button>
+</div>
+
+<p-table [value]="users" styleClass="mt-2">
   <ng-template pTemplate="header">
     <tr>
       <th>#</th>
@@ -13,8 +18,8 @@
   <ng-template pTemplate="body" let-user>
     <tr>
       <td class="flex gap-2">
-        <button pButton>asdfa</button>
-        <button pButton>asdfa</button>
+        <p-button icon="pi pi-trash" severity="danger" (onClick)="removeUser(user.id)"></p-button>
+<!--        <button pButton pRipple (click)="removeUser(user.id)" class="p-button-danger" icon="pi pi-times"></button>-->
       </td>
       <td>{{ user.name }}</td>
       <td>{{ user.lastName }}</td>

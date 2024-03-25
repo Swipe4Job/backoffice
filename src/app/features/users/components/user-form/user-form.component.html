@@ -1,0 +1,7 @@
+<form [formGroup]="formGroup" class="flex flex-column gap-3">
+  <input type="text" pInputText formControlName="name" placeholder="Put a name"/>
+  <input type="text" pInputText formControlName="lastName" placeholder="Put a last name"/>
+  <p-dropdown styleClass="w-full" appendTo="body" formControlName="role" [options]="roles" placeholder="Select a role"></p-dropdown>
+  <input type="email" pInputText formControlName="email" placeholder="Put an email"/>
+  <input type="text" pInputText formControlName="phoneNumber" placeholder="Put a phoneNumber" pKeyFilter="num"/>
+</form>

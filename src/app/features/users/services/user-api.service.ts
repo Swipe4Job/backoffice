@@ -43,4 +43,10 @@ export class UserApiService {
       }
     })
   }
+
+  public async removeUsers(criteria: Criteria) {
+    const params = new HttpParams().set('criteria', this.criteriaEncoder.encodeCriteria(criteria))
+    const response = this.http.delete<void>(this.BASE_URL, {params: params})
+    await firstValueFrom(response)
+  }
 }
